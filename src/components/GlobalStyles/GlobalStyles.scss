@@ -2,8 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{
+    //color
     --primary: #fe2c55;
+    --black: #000;
+    --white: #fff;
 
+    --text-color: #333;
+    --search-border-radius: 92px;
+    --search--height:46px;
+    --search--top--spacer: 9px;
+    --search--button-width:52px;
     //DefautLayout
     --default-layout-header-height:60px;
     --default-layout-width: 1150px;
@@ -11,7 +19,7 @@
 
 *{
     box-sizing: border-box;
-    margin: 0;
+    margin: 0;  
     padding: 0;
 }
 
@@ -27,4 +35,13 @@ body {
     font-size: 1.6rem;
     line-height: 1.5;
     text-rendering: optimizeSpeed;
+}
+
+button,input,[tabindex]{
+    border: none;
+    outline: none;
+}
+a[href]{
+    color: var(--text-color);
+    text-decoration: none;
 }
